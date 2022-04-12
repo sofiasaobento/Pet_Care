@@ -1,0 +1,268 @@
+/* Style the navigation bar */
+body {
+    background-color: #fafafa;
+}
+.navbar {
+    width: 100%;
+    background-color: #124C5F;
+  }
+
+  .lista {
+     margin-left: 400px;
+     margin-top: -10px;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    font-family: 'Nunito', sans-serif;
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    text-decoration:underline;
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    background-color: #FFE55E;
+  }
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 600px) {
+    .navbar a {
+        text-align: center;
+        float: none;
+        display: block;
+        color: #FFFFFF;
+      
+    }
+
+    a:hover{
+        color: #FFE55E;
+        transform: translateY(-5px) scale(0.95);
+    }
+
+    .lista {
+        float: none;
+        display: block;
+        margin-left:1px;
+        margin-top: -10px;
+     }
+
+    .active {
+        background-color: #124C5F;
+
+    }
+
+  }
+
+  /* buttons */
+
+  button {
+    width: 100px;
+    height: 40px;
+    margin-top: -7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 38px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    color: #FFFFFF;
+    background-color: #124C5F;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: all 0.15s linear;
+   }
+   
+   button:hover {
+    background-color: rgba(29, 201, 160, 0.08);
+    border-color: #124C5F;
+    color: #124C5F;
+    transform: translateY(-5px) scale(1.05);
+   }
+   
+   button:active {
+    background-color: transparent;
+    border-color: #124C5F;
+    color: #124C5F;
+    transform: translateY(5px) scale(0.95);
+   }
+   
+   button:disabled {
+    background-color: rgba(255, 255, 255, 0.16);
+    color: #8E8E93;
+    border-color: #8E8E93;
+   }
+
+   /* HOME and Image */
+
+   .background-image {
+    height: 100%;
+    width: 100%;
+    background-repeat: space;
+    background-image: url("/background.png");
+    position: relative;
+    margin-right: 50px;
+    
+  }
+
+  .home {
+      width: 550px;
+      height: 550px;
+      margin-left: 70px;
+      margin-top: 90px;
+   
+  }
+
+  h1 {
+    text-decoration: underline #124C5F;
+    font-family: 'Amatic SC', cursive;
+    font-size: 55px;
+  }
+
+  .descripcion{
+      font-family: 'Nunito', sans-serif;
+      font-weight: bold;
+      padding-bottom: 20px;
+  }
+
+  .imagen-home {
+      margin-top: 100px;
+      float: right;
+  }
+
+  img {
+    width: 400px;
+    margin-left: auto;
+    display: block;
+    float: right;
+    margin-top: -500px;
+    margin-right: 450px;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 50%;
+}
+
+@media screen and (max-width: 600px) {
+    .home {
+      float: none;
+      display: block;
+      margin-right: 450px;
+
+
+    }
+
+    .imagen{
+        display: block;
+        float: none;
+        margin-left:195%;
+        margin-top: 60%;
+        
+        
+       
+    }
+
+    .descripcion {
+        text-align: center;
+        margin-right: 200px;
+    }
+
+    button:hover {
+        background-color: #FFE55E;
+        border-color: #124C5F;
+        color: #124C5F;
+        transform: translateY(-5px) scale(1.05);
+    
+    }
+
+
+  }
+
+  
+
+/* CARD SERVICIOS */
+
+.titulo-servicios {
+    text-decoration: underline #124C5F;
+    margin-top: -100px;
+    margin-left: 70px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 55px;
+}
+
+.contenedor-servicios > div {
+    padding: 5px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.contenedor-servicios {
+
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 5px;
+}
+  
+.tarjeta1 {
+    margin: 30px;
+    width: 200px;
+    height: 220px;
+    border: 0.5px solid #98F2E1;
+    border-radius: 10%;
+    padding: 5px;
+    background: linear-gradient(#98F2E1, #FFFFFF, #FFFFFF);
+}
+
+.tarjeta2 {
+    margin: 30px;
+    width: 200px;
+    height: 220px;
+    border: 0.5px solid #FFE55E;
+    border-radius: 10%;
+    padding: 5px;
+    background: linear-gradient(#FFE55E ,#FFFFFF, #FFFFFF);
+}
+
+.servicio {
+    color: #124C5F;
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+    margin-top: 100px;
+
+}
+
+@media screen and (max-width: 700px) {
+    .contenedor-servicios > div {
+       
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .contenedor-servicios { 
+        margin: 100px;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        gap: 4px;
+    }
+
+    .titulo-servicios{
+        float: none;
+        display: block;
+        text-align: center;
+        margin-right: 60px;
+        margin-top: 20px;
+    }
+      
+}
