@@ -16,10 +16,10 @@
     <span class="add-icon"></span>
      <div class="navbar">
          <ul class="lista">
-            <il><a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a></il>
+            <il><a class="active" href="#home"><i class="fa fa-fw fa-home"></i> Home</a></il>
             <il><a href="#">Sobre nosotros</a></il>
             <il><a href="#servicios">Servicios</a></il>
-            <il><a href="#">Productos</a></il>
+            <il><a href="#productos">Productos</a></il>
             <il><a href="#">Actividades</a></il>
             <il><a href="#">Opiniones</a></il>
             <il><a href="#">Sucursales</a></il>
@@ -30,8 +30,10 @@
     </div>   
     <br>
 
+    <!-- HOME PAGE-->
+
     <div class="background-image">
-        <div class="home">
+        <div class="home" id="home">
         <h1>Cuidamos a tu mascota !</h1>
         <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nobis id, odit sunt ipsa, inventore, rem tenetur incidunt quis impedit sapiente
         quia numquam temporibus dolore porro quod reprehenderit consequatur reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est culpa eveniet odio aliquid quidem laboriosam laudantium nostrum, voluptatem harum quam facilis iste. Minus vitae voluptatum dignissimos, 
@@ -39,11 +41,13 @@
         <button>Contacto</button>
         </div>
     </div>
-    <i class="fa-solid fa-paw-simple"></i>
+   
     
-    <div class="imagen">
-        <img src="/pngwing.com (4).png"  alt="imagen">
-    </div>
+    <div class="img-home">
+        <img src="pngwing.com (4).png"  alt="pngwing4" class="img-home">
+    </div> 
+
+    <!-- SERVICE CATEGORY-->
 
     <div>
         <h2 class="titulo-servicios">Nuestros Servicios</h2>
@@ -71,6 +75,47 @@
             <h3 class="servicio-icono"><i class="fa-solid fa-paw-simple"></i></h3>
             <p class="servicio">Hyginic care</p>
         </div>
-    </div>     
+    </div>  
+
+    <!-- PRODUCTOS-->
+    
+    <div class="card-productos" id="productos">
+        <h2 class="titulo-productos">Productos</h2>
+        <div>
+            <p class="oferta">25 % OFF ALL Products</p>
+        </div>
+        <div class="card-productos-grid">
+        <div class="card">
+            <div class="imagen-producto">
+                <img src="alimentoparagato.png" alt="alimentoparagato" class="imagen1">
+            </div>
+            <span> Purina CatChow</span>
+            <p class="job">Healthy weight. Help achieve or maintain your cat's ideal weight</p>
+            <button> Buy Now
+            </button>
+        </div>
+
+        <div class="card">
+            <div class="imagen-producto">
+                <img src="pngwing.com (7).png" alt="pngwing" class="imagen">
+            </div>
+            <span>Royal Canin</span>
+            <p class="job">Digestive Care. For dogs prone to digestive sensitivity. Healthy weight.</p>
+            <button> Buy Now
+            </button>
+          </div>
+
+          <div class="card">
+            <div class="imagen-producto">
+                <img src="combogato.png" alt="combogato" class="imagen">
+                
+            </div>
+            <span>Brit Premium</span>
+            <p class="job">Delicate Chicken with chicken liver for senior cats.Healthy weight.</p>
+            <button> Buy Now
+            </button>
+          </div>
+          </div>
+    </div>
 </body>
 </html>

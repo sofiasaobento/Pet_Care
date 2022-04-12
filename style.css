@@ -42,6 +42,7 @@ body {
         float: none;
         display: block;
         color: #FFFFFF;
+    
       
     }
 
@@ -134,6 +135,7 @@ body {
       font-family: 'Nunito', sans-serif;
       font-weight: bold;
       padding-bottom: 20px;
+      color: #8E8E93;
   }
 
   .imagen-home {
@@ -141,13 +143,12 @@ body {
       float: right;
   }
 
-  img {
+  .img-home {
     width: 400px;
-    margin-left: auto;
     display: block;
     float: right;
-    margin-top: -500px;
-    margin-right: 450px;
+    margin-top: -270px;
+    margin-right: 300px;
     border-bottom-right-radius: 40%;
     border-bottom-left-radius: 50%;
 }
@@ -161,11 +162,14 @@ body {
 
     }
 
-    .imagen{
-        display: block;
-        float: none;
-        margin-left:195%;
-        margin-top: 60%;
+    .img-home{
+        display: flex;
+        align-items: center;
+        float:left;
+        margin-left: 30px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    
         
         
        
@@ -263,6 +267,111 @@ body {
         text-align: center;
         margin-right: 60px;
         margin-top: 20px;
+    }
+      
+}
+
+/* PRODUCTOS */
+
+.titulo-productos {
+    text-decoration: underline #124C5F;
+    margin-left: 70px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 55px;
+}
+
+.oferta {
+    margin-left: 70px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 55px;
+}
+
+/* From uiverse.io by @alexmaracinaru */
+
+.card-productos-grid{
+    margin-left: 12%;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 5px;
+}
+.card {
+    width: 400px;
+    height: 600px;
+    background: #fafafa;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.card span {
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    font-size: 20px;
+}
+   
+
+
+.imagen1 {
+    margin-left: 75px;
+    width: 250px;
+    height: 400px;
+}
+.imagen {
+    width: 380px;
+    height: 400px;
+
+}
+
+.card button {
+    padding: 10px;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    border: none;
+    margin-top: 30px;
+    background: #124C5F;
+    color: #FFFFFF;
+    font-weight: 600;
+    border: 1px solid #124C5F;
+}
+   
+.card button:hover {
+    background: #FFFFFF;
+    color: #124C5F;
+}
+
+.card .job {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #8E8E93;
+}
+
+@media screen and (max-width: 700px) {
+    .card> div {
+       
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .card-productos-grid { 
+        margin-left: 50px;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        gap: 4px;
+    }
+
+    .imagen1{
+        margin-left: 10px;
+    }
+
+    .card button:hover {
+        background: #FFE55E;
+        color: #124C5F;
     }
       
 }
