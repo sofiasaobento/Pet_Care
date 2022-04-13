@@ -4,7 +4,9 @@ body {
 }
 .navbar {
     width: 100%;
-    background-color: #124C5F;
+    position: fixed;
+    background-color:#fafafa ;
+    top: 2;
   }
 
   .lista {
@@ -37,6 +39,9 @@ body {
   
   /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
   @media screen and (max-width: 600px) {
+    .navbar {
+        background-color: #124C5F;
+    }
     .navbar a {
         text-align: center;
         float: none;
@@ -83,6 +88,7 @@ body {
     font-size: 16px;
     letter-spacing: 1px;
     transition: all 0.15s linear;
+    margin-top: 2px;
    }
    
    button:hover {
@@ -374,4 +380,114 @@ body {
         color: #124C5F;
     }
       
+}
+
+/* OPINIONES */
+
+
+.container {
+    height: 100vh;
+    display:inline-flex;
+    align-items:center;
+    padding: 90px;
+    margin-left: 100px;
+}
+
+.opiniones {
+    width: 300px;
+    height: 350px;
+    background-color: #EBA8BF;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.opiniones1 {
+    width: 300px;
+    height: 350px;
+    background-color: #EBA8BF;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.opiniones2 {
+    width: 300px;
+    height: 350px;
+    background-color: #FFF1A6;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.opiniones3 {
+    width: 300px;
+    height: 350px;
+    background-color: #DDC7ED;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.card__img1 {
+    margin-top: 90px;
+    margin-left: 20px;
+    position: absolute;
+    width: 290px;
+    height: 300px;
+    filter: drop-shadow(5px 10px 15px rgba(8,9,13,2));
+    transform: translate(.2rem, -8.5rem);
+}
+
+.card__img2 {
+    margin-top: 90px;
+    margin-left: 10px;
+    position: absolute;
+    width: 290px;
+    height: 290px;
+    filter: drop-shadow(5px 10px 15px rgba(8,9,13,2));
+    transform: translate(.2rem, -8.5rem);
+}
+.card__img3 {
+    margin-top: 90px;
+    margin-left: 25px;
+    position: absolute;
+    width: 260px;
+    height: 280px;
+    filter: drop-shadow(5px 10px 15px rgba(8,9,13,2));
+    transform: translate(.2rem, -8.5rem);
+}
+
+
+
+.card__title {
+    text-align: center;
+    margin: 70px;
+    font-size: 1.2rem;
+    color: #DDCA69;
+    margin-bottom: 0.5rem;
+    padding-top: 10px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.card__data {
+    width: 300px;
+    height: 140px;
+    margin-left: -77px;
+    margin-top: 70%;
+    background-color: #124C5F;
+    transform: translate(4.8rem);
+    
+    
+}
+
+.card__description {
+    color: #FFFFFF;
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.patitas1 {
+    text-align: center;
+    padding: 0 70px;
+    font-size: 1rem;
+    color: #DDCA69;
+    font-family: 'Nunito', sans-serif;
 }
